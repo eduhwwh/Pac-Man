@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- BOTÃO HOME -->
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:text="HOME"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_arcade"
+        android:layout_margin="16dp"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- BOTÃO RESTART -->
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:text="RESTART"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_arcade"
+        android:layout_margin="16dp"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- ÁREA DO JOGO -->
+    <com.example.pacman.GameView
+        android:id="@+id/gameView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/btnHome"
+        app:layout_constraintBottom_toTopOf="@id/layoutControls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- CONTROLES -->
+    <LinearLayout
+        android:id="@+id/layoutControls"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:paddingBottom="24dp"
+        android:background="#AA000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- CIMA -->
+        <Button
+            android:id="@+id/btnUp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text="▲"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_arcade" />
+
+        <!-- ESQUERDA + DIREITA -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnLeft"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:text="◀"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/btn_arcade" />
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnRight"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:text="▶"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/btn_arcade" />
+        </LinearLayout>
+
+        <!-- BAIXO -->
+        <Button
+            android:id="@+id/btnDown"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text="▼"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_arcade" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,23 +1,30 @@
-🎮 Jogo estilo Pac-Man – Android (Java)
+# 🎮 Jogo estilo Pac-Man
 
-Este repositório contém o trabalho final da disciplina Dispositivos Móveis II, que consiste no desenvolvimento de um jogo inspirado no clássico Pac-Man.
+Este repositório contém o **trabalho final da disciplina Dispositivos Móveis II**, que consiste no desenvolvimento de um **jogo inspirado no clássico Pac-Man**.
 
-O projeto foi desenvolvido em Java, utilizando o Android Studio, e implementa as principais funcionalidades do jogo original, como movimentação do personagem, coleta de pontos, colisões com inimigos e controle de fases.
+O jogo foi desenvolvido em **Java**, utilizando o **Android Studio**, e implementa as principais funcionalidades do Pac-Man, como movimentação do personagem, coleta de pontos, colisões com inimigos e mecânicas básicas de jogo.
 
-O objetivo do trabalho foi aplicar conceitos de desenvolvimento mobile, lógica de jogos e manipulação de eventos no ambiente Android.
+O objetivo do projeto é aplicar conceitos de **desenvolvimento mobile**, **lógica de jogos** e **interação com o usuário** na plataforma Android.
 
-📱 Tecnologias utilizadas:
+---
 
-Java
+## ✨ Principais funcionalidades
 
-Android Studio
+* [ ] Movimentação do personagem
+* [ ] Sistema de pontuação
+* [ ] Coleta de itens no mapa
+* [ ] Colisão com inimigos
+* [ ] Mecânicas básicas inspiradas no Pac-Man
 
-🎯 Funcionalidades principais:
+---
 
-Movimentação do personagem
+## 🛠️ Tecnologias
 
-Sistema de pontuação
+* Java
+* Android Studio
 
-Colisões com inimigos
+---
 
-Mecânicas básicas do Pac-Man
+## 🚀 Ambiente de desenvolvimento
+
+O projeto foi desenvolvido utilizando o **Android Studio**, com a linguagem **Java**, para execução em dispositivos Android ou emulador.
